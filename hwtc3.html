@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://foundation.time2test.co.uk/" />
+<title>TestCase3</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TestCase3</td></tr>
+</thead><tbody>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Users</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Users</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[@id='menu-users']/div[3]/ul/li[2]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user_login</td>
+	<td>javascript{var d=new Date();var mymonth=new Array(12);mymonth[0]='jan';mymonth[1]='feb';mymonth[2]='mar';mymonth[3]='apr';mymonth[4]='may';mymonth[5]='jun';mymonth[6]='jul';mymonth[7]='aug';mymonth[8]='sep';mymonth[9]='oct';mymonth[10]='nov';mymonth[11]='dec'; [d.getDate()] + mymonth[d.getMonth()] + d.getFullYear() + '-' + d.getHours() + d.getMinutes() + d.getSeconds() + 'november2012';}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>javascript{&quot;november2012&quot; + new Date().getMilliseconds()+&quot;@yahoo.com&quot;;}</td>
+</tr>
+<tr>
+	<td>randomString</td>
+	<td>2</td>
+	<td>alphanumeric</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=first_name</td>
+	<td>javascript{storedVars['alphanumeric'] }</td>
+</tr>
+<tr>
+	<td>randomString</td>
+	<td>2</td>
+	<td>numeric</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=last_name</td>
+	<td>javascript{&quot;Nov2012&quot;+storedVars['alphanumeric'] }</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=url</td>
+	<td>http://www.google.com/</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=pass1</td>
+	<td>time2test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=pass2</td>
+	<td>time2test</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Users</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>C:\\Users\\viresh\\.jenkins\\jobs\\Hello World Job - Nov 2012\\workspace\HelloWorld_User_details.jpg</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
